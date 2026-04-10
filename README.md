@@ -16,7 +16,6 @@ A complete guide and scripts for deploying Gemma 4 locally on Windows/Mac.
 
 ## 🛡️ 避坑说明
 部署过程中遇到了虚拟网卡、Clash 局域网限制等问题，详细解决方案请参考：
-[点击查看：保姆级图文教程 (飞书文档)](这里填你的飞书链接)
-
+[点击查看：保姆级图文教程 (飞书文档)](https://tcn4hqvdhgdg.feishu.cn/wiki/HeTxwrPzjih8mnkk8BUcCKM9n1b）
 ## 🤝 欢迎贡献
 如果你在其他配置下跑通了本教程，欢迎提交 Issue 分享你的显存占用数据！
