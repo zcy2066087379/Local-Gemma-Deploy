@@ -1,0 +1,30 @@
+防断网：自动化挂机脚本 (管理员模式 PowerShell)
+while($true) {
+    Write-Host ">>> 正在为 R9+5060 神机拉取模型..." -ForegroundColor Cyan
+    ollama pull gemma4:e4b-it-q4_K_M
+    if($?) { 
+        Write-Host "🎉 模型已完美入驻 D 盘基地！" -ForegroundColor Green
+        break 
+    }
+    Write-Host "⚠️ 检测到网络抖动，10秒后自动续传..." -ForegroundColor Yellow
+    Start-Sleep -s 10
+}
+ollama run gemma4:e4b-it-q4_K_M
+一键启动 Docker 命令：docker run -d -p 3000:8080 --add-host=host.docker.internal:host-gateway -v D:\open-webui-data:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main
+安装OpenwebUI：docker run -d -p 3000:8080 --add-host=host.docker.internal:host-gateway -v D:\open-webui-data:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main
+如果你的网络环境非常不稳定，老是断开，我们可以先把镜像下好，再启动容器。这样更稳妥：docker pull ghcr.io/open-webui/open-webui:main
+镜像下完后，再运行启动命令：docker run -d -p 3000:8080 --add-host=host.docker.internal:host-gateway -v D:\open-webui-data:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main
+自动化挂机脚本（小白也能用）
+如果你现在点一下 docker pull，万一又断了，它就会停在那里。为了让你上课时它能自动反复重试，请在 PowerShell 里运行下面这段“循环指令”：
+复制并粘贴这段代码到 PowerShell，按回车：
+while($true) {
+    docker pull ghcr.io/open-webui/open-webui:main
+    if($?) {
+        Write-Host "恭喜！下载完成！" -ForegroundColor Green
+        break
+    }
+    Write-Host "网络断了，3秒后自动重试..." -ForegroundColor Yellow
+    Start-Sleep -s 3
+}
+- 下载成功后再执行
+docker run -d -p 3000:8080 --add-host=host.docker.internal:host-gateway -v D:\open-webui-data:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main
