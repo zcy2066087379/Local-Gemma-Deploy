@@ -20,7 +20,7 @@
 
 ## 📚 详细图文手册
 遇到报错？
-👉 **[点击这里访问飞书保姆级图文教程](https://tcn4hqvdhgdg.feishu.cn/wiki/VatIwAwNxiAB6TkADZtcBSqwnlh)**
+👉 **[点击这里访问飞书保姆级图文教程](https://tcn4hqvdhgdg.feishu.cn/wiki/HeTxwrPzjih8mnkk8BUcCKM9n1b?from=from_copylink)**
 
 ## 🤝 参与贡献
 如果你在其他 GPU 配置下有更好的性能优化方案，欢迎提 [Pull Request](https://github.com/zcy2066087379/Local-Gemma-Deploy/pulls) 或提交 [Issue](https://github.com/zcy2066087379/Local-Gemma-Deploy/issues)。
