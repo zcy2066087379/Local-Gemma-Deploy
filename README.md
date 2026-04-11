@@ -19,7 +19,7 @@
 3. 运行 `/scripts` 下的自动化部署脚本。
 
 ## 📚 详细图文手册
-遇到报错？想看如何用 AI 辅助学习 YouTube 技术视频？
+遇到报错？
 👉 **[点击这里访问飞书保姆级图文教程](https://tcn4hqvdhgdg.feishu.cn/wiki/VatIwAwNxiAB6TkADZtcBSqwnlh)**
 
 ## 🤝 参与贡献
